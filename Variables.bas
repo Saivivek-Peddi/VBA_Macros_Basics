@@ -35,7 +35,7 @@ Sub quick_start()
     ' Adding items to collections and dictionaries
     new_collection.Add "Hola"
     new_collection.Add 1        ' collection is similar to list in python and add is simlar to append
-    new_collection.Add d
+    new_collection.Add d        ' adding declared variabels to collections
     
     new_dict.Add "Hola", 1
     new_dict.Add "City", "Hyderabad"    ' Dictionary is similar to dictionary
