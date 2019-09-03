@@ -1,3 +1,4 @@
+Attribute VB_Name = "Last_Cell_Function"
 ' Function for finding the last column or row in excel
 ' Written by Ron de Bruin - for more visit - https://www.rondebruin.nl - I tweaked it a little for my usecase
 ' conventional xlEnd won't work as it doesn't take blanks into consideration while findint the last column or row _
@@ -104,3 +105,5 @@ ErrExit:
     MsgBox "Error setting the worksheet or range."
 
 End Function
+
+

@@ -1,3 +1,4 @@
+Attribute VB_Name = "Variables"
 ' The following includes all the basic variables, their syntax and references and instantiations, that will
 ' be useful for most of the VBA projects
 
@@ -35,7 +36,7 @@ Sub quick_start()
     ' Adding items to collections and dictionaries
     new_collection.Add "Hola"
     new_collection.Add 1        ' collection is similar to list in python and add is simlar to append
-    new_collection.Add d        ' adding declared variabels to collections
+    new_collection.Add d
     
     new_dict.Add "Hola", 1
     new_dict.Add "City", "Hyderabad"    ' Dictionary is similar to dictionary
@@ -51,6 +52,15 @@ Sub quick_start()
     
     For Each Item In new_collection
         Debug.Print Item
+    Next
+    
+    ' Get all the open workbook names into a collection(list)
+    Dim collection2 As Collection
+    Set collection2 = New Collection
+    
+    Dim oBook As Workbook
+    For Each oBook In Workbooks
+        collection2.Add oBook.Name
     Next
     
     ' Rnage object - Very useful
@@ -70,3 +80,6 @@ Sub quick_start()
     Next
     
 End Sub
+
+
+
